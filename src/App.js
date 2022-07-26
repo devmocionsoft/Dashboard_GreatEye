@@ -37,15 +37,17 @@ function App() {
     });
   }, []);
 
+  // <input
+  //       type="file"
+  //       onChange={(event) => {
+  //         setImageUpload(event.target.files[0]);
+  //       }}
+  //     />
+  //     <button onClick={uploadFile}> Upload Image</button>
+
   return (
     <div className="App">
-      <input
-        type="file"
-        onChange={(event) => {
-          setImageUpload(event.target.files[0]);
-        }}
-      />
-      <button onClick={uploadFile}> Upload Image</button>
+      
       {imageUrls.map((url) => {
         return <img src={url} />;
       })}
