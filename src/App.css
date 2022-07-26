@@ -2,8 +2,16 @@
   width: 100vw;
   height: auto;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+.heatmap-selector,
+.counter-selector {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  height: 300px;
+  min-width: 300px;
 }
 
 img {
