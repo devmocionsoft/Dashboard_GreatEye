@@ -22,6 +22,7 @@ export default function HeatmapSelector() {
 
   return (
     <div className="heatmap-selector">
+      <span className="counter-title">Mapa de calor</span>
       <button onClick={() => setShow(true)}>Dropdown</button>
       {show ? (
         <div className="dropdown-content">

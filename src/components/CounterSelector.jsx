@@ -23,6 +23,7 @@ const data = {
 export default function CounterSelector() {
   return (
     <div className="counter-selector">
+      <span className="counter-title">Conteo de personas</span>
       <Chart type="line" data={processing(data)} />
     </div>
   );
